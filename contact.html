@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Story Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="logobun.png"
+            style="width: 190px; height: auto; margin-top: 10px"
+          />
+        </div>
+        <div class="col-md-4 text-center">
+          <span class="span-title">Travel story</span>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav
+          class="nav py-2 px-2 mt-1 bg-gradient"
+          style="background-color: rgb(33, 66, 41)"
+        >
+          <a class="nav-link text-white" href="index.html">Home</a>
+          <a class="nav-link text-white" href="about.html">About us</a>
+          <a
+            class="nav-link active text-white fw-bold"
+            aria-current="page"
+            href="#"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="container my-5">
+        <h3
+          class="my-4 text-center"
+          style="font-family: Montserrat, sans-serif"
+        >
+          Tell us your travel story!
+        </h3>
+        <p class="text-center">
+          We’re so happy you’re here! <br />
+          If you want to share a travel story, ask us something, or just tell us
+          about the destination that stole your heart, don’t hesitate to reach
+          out. <br />
+          We absolutely love hearing from fellow travel lovers! Fill out the
+          form below, and we promise we’ll get back to you as soon as possible.
+        </p>
+      </div>
+      <div class="container">
+        <form>
+          <label for="name">Your name</label><br />
+          <div class="input-group input-group-lg w-75">
+            <input
+              type="text"
+              class="form-control mb-5"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+
+          <label for="email">Email (mandatory)</label> <br />
+          <div class="input-group input-group-lg w-75">
+            <input
+              type="text"
+              class="form-control mb-5"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+
+          <label for="subject">Subject</label><br />
+          <div class="input-group input-group-lg w-75">
+            <input
+              type="text"
+              class="form-control mb-5"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+
+          <div class="mb-3 w-75">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Your message for us</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <input
+            id="button"
+            type="submit"
+            value="Submit"
+            class="btn btn-outline-secondary"
+            style="background-color: rgb(33, 66, 41); color: rgb(255, 255, 255)"
+          />
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="bg-gradient px-3 py-3"
+      style="background-color: rgb(218, 218, 141)"
+    >
+      <div class="container">
+        <span class="mb-3 mb-md-0 small">© 2025, Travel Story</span>
+      </div>
+    </footer>
+
+    <script>
+      const submitButton = document.querySelector("#button");
+      submitButton.addEventListener("click", function () {
+        alert(
+          "Thank you for your message! We will get back to you as soon as possible!"
+        );
+      });
+    </script>
+  </body>
+</html>
